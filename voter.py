@@ -41,8 +41,6 @@ def store_data(college_id, fingerprint_hash):
         file.write(college_id + "," + fingerprint_hash + "\n")
 
 
-# -------- MAIN PROGRAM --------
-
 while True:
     print("\n---- Voting System ----")
 
@@ -60,4 +58,5 @@ while True:
     choice = input("Do you want to enter next voter? (yes/no): ").strip().lower()
     if choice != "yes":
         print("Voting session ended.")
+
         break
