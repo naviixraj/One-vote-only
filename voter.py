@@ -50,13 +50,14 @@ while True:
     fingerprint_hash = hash_fingerprint(fingerprint)
 
     if check_duplicate(college_id, fingerprint_hash):
-        print("❌ Error: Already Voted!")
+        print(" Error: Already Voted!")
     else:
         store_data(college_id, fingerprint_hash)
-        print("✅ Vote Successfully Recorded!")
+        print(" Vote Successfully Recorded!")
 
     choice = input("Do you want to enter next voter? (yes/no): ").strip().lower()
     if choice != "yes":
         print("Voting session ended.")
 
         break
+
